@@ -68,6 +68,69 @@ session_start();
 </div>
 
 
+<?php if (isset($_SESSION['usuario_id'])): ?>
+                    <!-- Usuario logueado -->
+                    
+                    <div class="container mt-5">
+  <div class="row noticia-container">
+    <div class="col-md-6">
+      <img src="img/noticia1.jpg" class="img-fluid noticia-img" alt="Piratería en los Videojuegos">
+    </div>
+    <div class="col-md-6 d-flex align-items-center">
+      <div>
+        <h2 class="noticia-titulo">Piratería en los Videojuegos</h2>
+        <p class="noticia-p">Durante varias décadas la industria de la música y el cine han luchado a capa y espada contra la piratería. Una de las grandes empresas tecnológicas del presente, Spotify, nació por la necesidad que tenían los estudios discográficos, que perdían millones de dólares al año por culpa de las descargas ilegales de música en internet.
+
+El mercado de los videojuegos en el mundo, uno que factura más billones de dólares al año que el de la música y el cine juntos, tampoco ha podido escapar de la piratería. Es común escuchar a muchos adultos de hoy decir que su primera consola no fue la NES, Nintendo 64 y mucho menos la PlayStation 1, sino la Polystation que se comercializó bien en Colombia, pero era una versión pirata, por ende, sus componentes no eran los de mayor calidad.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row noticia-container">
+    <div class="col-md-6 order-md-2">
+      <img src="img/noticia2.png" class="img-fluid noticia-img" alt="Demanda de lenguajes de programación">
+    </div>
+    <div class="col-md-6 d-flex align-items-left order-md-1">
+      <div>
+        <h2 class="noticia-titulo">Demanda de lenguajes</h2>
+        <p class="noticia-p">Java, JavaScript, Python, C#, PHP, y Ruby son algunos de los lenguajes de programación más demandados y útiles para aprender hoy en día. Java es esencial para el desarrollo de Android, JavaScript para interactividad web, Python para Big Data y AI, C# para plataformas de Microsoft, PHP para aplicaciones web basadas en datos, y Ruby es recomendado para desarrollo rápido y startups​​​​. Estos lenguajes son fundamentales en varios campos tecnológicos y su conocimiento es altamente valorado en el mercado laboral actual.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+                <?php else: ?>
+                    <!-- Usuario no logueado -->
+                    <div class="container mt-5">
+  <div class="row noticia-container">
+    <div class="col-md-6">
+      <img src="img/noticia1.jpg" class="img-fluid noticia-img" alt="Piratería en los Videojuegos">
+    </div>
+    <div class="col-md-6 d-flex align-items-center">
+      <div>
+        <h2 class="noticia-titulo">Piratería en los Videojuegos</h2>
+        <p class="noticia-p">Durante varias décadas la industria de la música y el cine han luchado a capa y espada contra la piratería. Una de las grandes empresas tecnológicas del presente, Spotify, nació por la necesidad que tenían los estudios discográficos, que perdían millones de dólares al año por culpa de las descargas ilegales de música en internet.
+
+El mercado de los videojuegos en el mundo, uno que factura más billones de dólares al año que el de la música y el cine juntos, tampoco ha podido escapar de la piratería. Es común escuchar a muchos adultos de hoy decir que su primera consola no fue la NES, Nintendo 64 y mucho menos la PlayStation 1, sino la Polystation que se comercializó bien en Colombia, pero era una versión pirata, por ende, sus componentes no eran los de mayor calidad.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row noticia-container">
+    <div class="col-md-6 order-md-2">
+      <img src="img/noticia2.png" class="img-fluid noticia-img" alt="Demanda de lenguajes de programación">
+    </div>
+    <div class="col-md-6 d-flex align-items-left order-md-1">
+      <div>
+        <h2 class="noticia-titulo">Demanda de lenguajes</h2>
+        <p class="noticia-p">Java, JavaScript, Python, C#, PHP, y Ruby son algunos de los lenguajes de programación más demandados y útiles para aprender hoy en día. Java es esencial para el desarrollo de Android, JavaScript para interactividad web, Python para Big Data y AI, C# para plataformas de Microsoft, PHP para aplicaciones web basadas en datos, y Ruby es recomendado para desarrollo rápido y startups​​​​. Estos lenguajes son fundamentales en varios campos tecnológicos y su conocimiento es altamente valorado en el mercado laboral actual.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+                <?php endif; ?>
+
 
 
 
