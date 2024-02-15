@@ -1,0 +1,142 @@
+.nombre{
+    background-color: #333; 
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.imagen-fondo {
+    overflow: hidden; 
+    opacity: 0.6;
+    margin-bottom: 40px;
+}
+  
+.imagen-fondo img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+.form-editar, .form-crear{
+    margin: 0 auto;
+    margin-top: 35px;
+    width: 60%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.pokemon-table th, .pokemon-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.pokemon-table th {
+    background-color: #9ae29c;
+    color: white;
+    text-align: center;
+}
+
+.pokemon-table td {
+    text-align: center;
+}
+
+.pokemon-list h1{
+    margin: 20px;
+}
+
+.pokemon-list{
+    width: 90%;
+    margin: 20px auto;
+}
+
+.table-responsive {
+    overflow-x: auto;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.margen{
+    margin-top: 270px;
+}
+
+.image-gallery {
+    margin: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.image {
+    flex-basis: calc(33.333% - 10px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.image h3, .image h4 {
+    color: #333; 
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+    font-size: 1.2em; 
+    font-weight: 600; 
+    background-color: #f0f0f0; 
+    display: inline-block; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Efecto de zoom al pasar el cursor */
+.image:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .image {
+        flex-basis: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 400px) {
+    .image {
+        flex-basis: 100%;
+    }
+}
+
+.btn-crear-pokemon {
+    background-color: blue;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px; 
+    margin-left: 120px;
+    margin-bottom: 30px;
+    border: none;
+    cursor: pointer; 
+    text-align: center; 
+    display: inline-block; 
+    border-radius: 8px; 
+    transition: background-color 0.3s; 
+}
+
+.colorizable {
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
